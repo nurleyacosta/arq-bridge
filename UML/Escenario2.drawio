@@ -1,0 +1,135 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="29.3.8">
+  <diagram name="Patrón Bridge - Notificaciones" id="xdcqL2yi3fRNliwfhtRR">
+    <mxGraphModel dx="1783" dy="958" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" value="Sistema de Notificaciones - Patrón Bridge" vertex="1">
+          <mxGeometry height="40" width="600" x="400" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-2" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Notificacion&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;# plataforma: Plataforma&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ constructor(plataforma: Plataforma)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ enviar(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="110" width="280" x="150" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-3" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;NotificacionAlerta&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- titulo: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- mensaje: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- prioridad: string&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ constructor(plataforma, datos)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ enviar(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="240" x="30" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-4" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;NotificacionMensaje&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- remitente: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- contenido: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- adjuntos?: string[]&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ constructor(plataforma, datos)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ enviar(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="240" x="310" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-5" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;NotificacionConfirmacion&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- accion: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- detalles: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- codigoConfirmacion: string&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ constructor(plataforma, datos)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ enviar(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="260" x="590" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-6" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Plataforma&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ enviarNotificacion(datos): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ validarFormato(datos): boolean&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="280" x="950" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-7" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PlataformaEmail&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- servidorSMTP: string&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ enviarNotificacion(datos): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ validarFormato(datos): boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- configurarSMTP(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="240" x="890" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-8" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PlataformaMovil&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- servicioNotificaciones: string&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ enviarNotificacion(datos): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ validarFormato(datos): boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- configurarPush(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="240" x="890" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-9" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PlataformaWeb&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- websocketURL: string&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ enviarNotificacion(datos): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ validarFormato(datos): boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- configurarWebSocket(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="240" x="890" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-10" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PlataformaEscritorio&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- sistemaOperativo: string&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ enviarNotificacion(datos): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ validarFormato(datos): boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- mostrarNotificacionSistema(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="260" x="1170" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-11" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=11;fontFamily=Helvetica;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ConfiguracionEmail&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ destinatario: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ asunto: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ cuerpo: string&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="1170" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-12" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=11;fontFamily=Helvetica;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;DatosNotificacion&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ usuario: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ timestamp: Date&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ [key: string]: any&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="1170" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-13" edge="1" parent="1" source="EylOK_PE8SbxqqlCnIzR-3" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="EylOK_PE8SbxqqlCnIzR-2" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="150" y="280" as="sourcePoint" />
+            <mxPoint x="310" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-14" edge="1" parent="1" source="EylOK_PE8SbxqqlCnIzR-4" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="EylOK_PE8SbxqqlCnIzR-2" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="430" y="280" as="sourcePoint" />
+            <mxPoint x="590" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-15" edge="1" parent="1" source="EylOK_PE8SbxqqlCnIzR-5" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="EylOK_PE8SbxqqlCnIzR-2" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="720" y="280" as="sourcePoint" />
+            <mxPoint x="880" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-16" edge="1" parent="1" source="EylOK_PE8SbxqqlCnIzR-7" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="EylOK_PE8SbxqqlCnIzR-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1010" y="270" as="sourcePoint" />
+            <mxPoint x="1170" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-17" edge="1" parent="1" source="EylOK_PE8SbxqqlCnIzR-8" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="EylOK_PE8SbxqqlCnIzR-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1010" y="430" as="sourcePoint" />
+            <mxPoint x="1020" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-18" edge="1" parent="1" source="EylOK_PE8SbxqqlCnIzR-9" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="EylOK_PE8SbxqqlCnIzR-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1010" y="590" as="sourcePoint" />
+            <mxPoint x="1030" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-19" edge="1" parent="1" source="EylOK_PE8SbxqqlCnIzR-10" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="EylOK_PE8SbxqqlCnIzR-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1300" y="270" as="sourcePoint" />
+            <mxPoint x="1100" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-20" edge="1" parent="1" source="EylOK_PE8SbxqqlCnIzR-2" style="endArrow=diamond;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="EylOK_PE8SbxqqlCnIzR-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="450" y="175" as="sourcePoint" />
+            <mxPoint x="610" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-21" connectable="0" parent="EylOK_PE8SbxqqlCnIzR-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="usa &amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1" y="2" as="geometry">
+            <mxPoint x="40" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-22" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#e1d5e7;strokeColor=#9673a6;size=15;fontSize=11;fontStyle=1" value="ABSTRACCIÓN&#xa;(Notificaciones)" vertex="1">
+          <mxGeometry height="70" width="100" x="30" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-23" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff4e6;strokeColor=#d6b656;size=15;fontSize=11;fontStyle=1" value="IMPLEMENTACIÓN&#xa;(Plataformas)" vertex="1">
+          <mxGeometry height="70" width="110" x="1260" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;" value="" vertex="1">
+          <mxGeometry height="100" width="400" x="30" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-25" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1" value="Leyenda" vertex="1">
+          <mxGeometry height="20" width="80" x="40" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;align=left;" value="Abstracción (Notificaciones)" vertex="1">
+          <mxGeometry height="25" width="170" x="50" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=left;" value="Implementación (Plataformas)" vertex="1">
+          <mxGeometry height="25" width="170" x="240" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;" value="Abstracción Refinada" vertex="1">
+          <mxGeometry height="25" width="170" x="50" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;align=left;" value="Implementación Concreta" vertex="1">
+          <mxGeometry height="25" width="170" x="240" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-30" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=11;" value="El patrón Bridge separa la abstracción (tipos de notificaciones)&#xa;de la implementación (plataformas de envío), permitiendo que ambas&#xa;varíen independientemente. Cada tipo de notificación puede enviarse&#xa;por cualquier plataforma sin modificar el código existente." vertex="1">
+          <mxGeometry height="100" width="450" x="480" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;dashed=1;" value="" vertex="1">
+          <mxGeometry height="100" width="390" x="980" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-32" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1" value="Beneficios del Patrón" vertex="1">
+          <mxGeometry height="20" width="150" x="990" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="EylOK_PE8SbxqqlCnIzR-33" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;" value="✓ Escalabilidad: Agregar nuevas plataformas o notificaciones&#xa;✓ Desacoplamiento: Cambios independientes en cada jerarquía&#xa;✓ Reutilización: Una notificación funciona en todas las plataformas&#xa;✓ Mantenimiento: Cambios localizados y predecibles" vertex="1">
+          <mxGeometry height="60" width="370" x="990" y="795" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

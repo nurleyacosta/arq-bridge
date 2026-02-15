@@ -1,0 +1,35 @@
+{
+  "name": "patron-bridge-notificaciones-ts",
+  "version": "2.0.0",
+  "description": "Implementación del Patrón Bridge siguiendo principios SOLID y mejores prácticas",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/demo.js",
+    "dev": "ts-node src/demo.ts",
+    "test": "npm run build && node dist/tests/index.test.js",
+    "clean": "rm -rf dist",
+    "watch": "tsc --watch",
+    "lint": "echo 'Linting...'",
+    "example": "npm run build && node dist/examples/ejemplo-basico.js"
+  },
+  "keywords": [
+    "design-patterns",
+    "bridge-pattern",
+    "solid-principles",
+    "typescript",
+    "clean-code"
+  ],
+  "author": "Estudiante de Arquitectura de Software",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
