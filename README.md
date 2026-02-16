@@ -298,13 +298,13 @@ classDiagram
 
 ## Explicación del Diagrama
 
-### 🔵 Jerarquía de Abstracción (Azul - Izquierda)
+### Jerarquía de Abstracción (Notificacion - Izquierda)
 - **Notificacion**: Clase abstracta base que mantiene referencia a una Plataforma
 - **NotificacionAlerta**: Notificaciones urgentes con prioridad
 - **NotificacionMensaje**: Mensajes con adjuntos
 - **NotificacionConfirmacion**: Confirmaciones con código único
 
-### 🟡 Jerarquía de Implementación (Amarillo - Derecha)
+### Jerarquía de Implementación (Plataforma - Derecha)
 - **Plataforma**: Interfaz que define el contrato
 - **PlataformaEmail**: Implementación SMTP
 - **PlataformaMovil**: Push notifications
