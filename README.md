@@ -321,4 +321,6 @@ La composición entre `Notificacion` y `Plataforma` es el **puente** que permite
 - **Sin Bridge**: 3 tipos × 4 plataformas = 12 clases
 - **Con Bridge**: 3 + 4 + 1 base = 8 clases principales
 
+- **Nota extra**
 ---
+
